@@ -1,0 +1,3 @@
+[submodule "quickjs/source"]
+	path = quickjs/source
+	url = https://github.com/bellard/quickjs.git
