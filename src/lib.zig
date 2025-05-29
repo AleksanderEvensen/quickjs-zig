@@ -1,8 +1,9 @@
 const std = @import("std");
-const cApi = @import("c.zig");
-const c = cApi.c;
 
-const JSRuntime = @import("JSRuntime.zig");
+pub const cApi = @import("c.zig").c;
+pub const JSRuntime = @import("JSRuntime.zig");
+
+const c = cApi;
 
 pub fn evalJS(code: []const u8) !cApi.c.JSValue {
     const rt = try JSRuntime.init();
